@@ -1,0 +1,106 @@
+:root {
+  --huruf-utama: 'Oswald', sans-serif;
+  --huruf-kedua: 'Open-Sans', sans-serif;
+  --warna-text-utama: #30271c;
+}
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--warna-text-utama);
+}
+body {
+  font-size: 16px;
+  background-color: rgb(234, 231, 222);
+  font-family: var(--huruf-utama);
+  color: #30271c;
+}
+
+/* Bagian Header */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #30271c;
+}
+
+h2 {
+  color: #30271c;
+}
+
+.navbar {
+  max-width: 1800px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-lists {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-lists .list-item a {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.list-item a:hover {
+  color: #c7a17a;
+  transition: 0.4s;
+}
+
+.text-hover-yellow {
+  transition: 0.4s;
+}
+
+.text-hover-yellow:hover {
+  color: #c7a17a;
+}
+
+/* Bagian Main */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/*Gallery*/
+
+.list-gallery {
+  display: flex;
+  gap: 8rem;
+}
+
+.list-gallery .list-gambar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-gallery .list-gambar img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
